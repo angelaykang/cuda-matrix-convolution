@@ -19,6 +19,27 @@
 | 1024        | 507×              | 660×                   | 2554×          |
 | 2048        | 2714×             | 2970×                  | 24,941×        |
 
+---
+
+## Convolution Performance Results (filter N=3×3)
+
+Image size M×M, 5 filter types (sobel_x, sobel_y, gaussian, sharpen, laplacian). Times below are per run; GPU times are typical (filter type has little effect).
+
+| Implementation | M=256 | M=512 | M=1024 |
+|----------------|-------|-------|--------|
+| CPU (C)        | 0.001 sec | 0.004 sec | ~0.018 sec |
+| CUDA (GPU)     | ~0.066 ms | ~0.072 ms | ~0.110 ms |
+
+### Convolution speedup (CPU / GPU)
+
+| Image size | Speedup |
+|------------|---------|
+| 256×256    | ~15×    |
+| 512×512    | ~55×    |
+| 1024×1024  | ~163×   |
+
+---
+
 ## Notes
 
 - CPU time in seconds, GPU time in ms. Speedup: `CPU_time_seconds / (GPU_time_ms / 1000.0)`.
@@ -43,3 +64,6 @@ matrix_cublas.exe 2048
 ```
 
 Or run all at once: `python scripts\run_matrix_tests.py`
+
+**Convolution:** `python scripts\run_convolution_tests.py`
+
