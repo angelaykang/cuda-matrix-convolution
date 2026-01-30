@@ -110,7 +110,3 @@ python py\call_convolution_gpu.py 512 3 sobel_x
 ```bat
 python scripts\run_everything.py
 ```
-
-## License
-
-Use and modify as needed for your course or projects.

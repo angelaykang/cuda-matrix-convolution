@@ -43,27 +43,3 @@ Image size M×M, 5 filter types (sobel_x, sobel_y, gaussian, sharpen, laplacian)
 ## Notes
 
 - CPU time in seconds, GPU time in ms. Speedup: `CPU_time_seconds / (GPU_time_ms / 1000.0)`.
-
-## How to reproduce
-
-From repo root, build with `scripts\build_all.bat`, then run:
-
-```bat
-matrix_cpu.exe 512
-matrix_cpu.exe 1024
-matrix_cpu.exe 2048
-matrix_gpu.exe 512
-matrix_gpu.exe 1024
-matrix_gpu.exe 2048
-matrix_gpu_tiled.exe 512
-matrix_gpu_tiled.exe 1024
-matrix_gpu_tiled.exe 2048
-matrix_cublas.exe 512
-matrix_cublas.exe 1024
-matrix_cublas.exe 2048
-```
-
-Or run all at once: `python scripts\run_matrix_tests.py`
-
-**Convolution:** `python scripts\run_convolution_tests.py`
-

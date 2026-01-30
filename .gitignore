@@ -32,5 +32,9 @@ env/
 Thumbs.db
 desktop.ini
 
-# Optional: uncomment to ignore generated PGM images
+# Convolution output written to repo root when run from root
+/input_*.pgm
+/output_*.pgm
+
+# Optional: uncomment to ignore PGM in samples/ too
 # samples/*.pgm
