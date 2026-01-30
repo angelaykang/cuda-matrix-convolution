@@ -1,0 +1,289 @@
+CPU execution time (N=512): 0.191000 seconds
+CPU execution time (N=1024): 1.375000 seconds
+CPU execution time (N=2048): 54.992000 seconds
+GPU: NVIDIA GeForce RTX 3060
+Matrix size: 512 x 512 (Naïve CUDA kernel)
+
+Naïve CUDA execution time (N=512): 0.000434 seconds (0.434 ms)
+GPU: NVIDIA GeForce RTX 3060
+Matrix size: 1024 x 1024 (Naïve CUDA kernel)
+
+Naïve CUDA execution time (N=1024): 0.002693 seconds (2.693 ms)
+GPU: NVIDIA GeForce RTX 3060
+Matrix size: 2048 x 2048 (Naïve CUDA kernel)
+
+Naïve CUDA execution time (N=2048): 0.020737 seconds (20.737 ms)
+GPU: NVIDIA GeForce RTX 3060
+Matrix size: 512 x 512 (Optimized tiled CUDA kernel, TILE_WIDTH=16)
+
+Optimized CUDA execution time (N=512): 0.000338 seconds (0.338 ms)
+GPU: NVIDIA GeForce RTX 3060
+Matrix size: 1024 x 1024 (Optimized tiled CUDA kernel, TILE_WIDTH=16)
+
+Optimized CUDA execution time (N=1024): 0.002069 seconds (2.069 ms)
+GPU: NVIDIA GeForce RTX 3060
+Matrix size: 2048 x 2048 (Optimized tiled CUDA kernel, TILE_WIDTH=16)
+
+Optimized CUDA execution time (N=2048): 0.015819 seconds (15.819 ms)
+GPU: NVIDIA GeForce RTX 3060
+Matrix size: 512 x 512
+
+Execution time: 0.000359 seconds (0.359 ms)
+Result element [0][0]: 22906523648.00
+GPU: NVIDIA GeForce RTX 3060
+Matrix size: 1024 x 1024
+
+Execution time: 0.000591 seconds (0.591 ms)
+Result element [0][0]: 366503985152.00
+GPU: NVIDIA GeForce RTX 3060
+Matrix size: 2048 x 2048
+
+Execution time: 0.002370 seconds (2.370 ms)
+Result element [0][0]: 5864065335296.00
+=== MATRIX MULTIPLICATION ===
+
+--- CPU ---
+
+--- Na�ve CUDA ---
+
+--- Optimized (tiled) CUDA ---
+
+--- cuBLAS ---
+
+Matrix tests done.
+Using Sobel X (horizontal edge detection) filter
+Image size: 256 x 256
+Filter size: 3 x 3
+Convolution completed in 0.001000 seconds
+Output saved to: output_sobel_x_M256_N3.pgm
+Input saved to: input_M256.pgm
+Using Sobel Y (vertical edge detection) filter
+Image size: 256 x 256
+Filter size: 3 x 3
+Convolution completed in 0.001000 seconds
+Output saved to: output_sobel_y_M256_N3.pgm
+Input saved to: input_M256.pgm
+Using Gaussian blur filter
+Image size: 256 x 256
+Filter size: 3 x 3
+Convolution completed in 0.001000 seconds
+Output saved to: output_gaussian_M256_N3.pgm
+Input saved to: input_M256.pgm
+Using Sharpen filter
+Image size: 256 x 256
+Filter size: 3 x 3
+Convolution completed in 0.001000 seconds
+Output saved to: output_sharpen_M256_N3.pgm
+Input saved to: input_M256.pgm
+Using Laplacian edge detection filter
+Image size: 256 x 256
+Filter size: 3 x 3
+Convolution completed in 0.001000 seconds
+Output saved to: output_laplacian_M256_N3.pgm
+Input saved to: input_M256.pgm
+Using Sobel X (horizontal edge detection) filter
+Image size: 512 x 512
+Filter size: 3 x 3
+Convolution completed in 0.004000 seconds
+Output saved to: output_sobel_x_M512_N3.pgm
+Input saved to: input_M512.pgm
+Using Sobel Y (vertical edge detection) filter
+Image size: 512 x 512
+Filter size: 3 x 3
+Convolution completed in 0.004000 seconds
+Output saved to: output_sobel_y_M512_N3.pgm
+Input saved to: input_M512.pgm
+Using Gaussian blur filter
+Image size: 512 x 512
+Filter size: 3 x 3
+Convolution completed in 0.004000 seconds
+Output saved to: output_gaussian_M512_N3.pgm
+Input saved to: input_M512.pgm
+Using Sharpen filter
+Image size: 512 x 512
+Filter size: 3 x 3
+Convolution completed in 0.004000 seconds
+Output saved to: output_sharpen_M512_N3.pgm
+Input saved to: input_M512.pgm
+Using Laplacian edge detection filter
+Image size: 512 x 512
+Filter size: 3 x 3
+Convolution completed in 0.004000 seconds
+Output saved to: output_laplacian_M512_N3.pgm
+Input saved to: input_M512.pgm
+Using Sobel X (horizontal edge detection) filter
+Image size: 1024 x 1024
+Filter size: 3 x 3
+Convolution completed in 0.017000 seconds
+Output saved to: output_sobel_x_M1024_N3.pgm
+Input saved to: input_M1024.pgm
+Using Sobel Y (vertical edge detection) filter
+Image size: 1024 x 1024
+Filter size: 3 x 3
+Convolution completed in 0.017000 seconds
+Output saved to: output_sobel_y_M1024_N3.pgm
+Input saved to: input_M1024.pgm
+Using Gaussian blur filter
+Image size: 1024 x 1024
+Filter size: 3 x 3
+Convolution completed in 0.017000 seconds
+Output saved to: output_gaussian_M1024_N3.pgm
+Input saved to: input_M1024.pgm
+Using Sharpen filter
+Image size: 1024 x 1024
+Filter size: 3 x 3
+Convolution completed in 0.017000 seconds
+Output saved to: output_sharpen_M1024_N3.pgm
+Input saved to: input_M1024.pgm
+Using Laplacian edge detection filter
+Image size: 1024 x 1024
+Filter size: 3 x 3
+Convolution completed in 0.019000 seconds
+Output saved to: output_laplacian_M1024_N3.pgm
+Input saved to: input_M1024.pgm
+GPU: NVIDIA GeForce RTX 3060
+Image size: 256 x 256
+Filter size: 3 x 3
+Filter type: sobel_x
+
+Launch configuration: 16x16 blocks, 16x16 threads per block
+Execution time: 0.000060 seconds (0.060 ms)
+Result pixel [0][0]: 3
+GPU: NVIDIA GeForce RTX 3060
+Image size: 256 x 256
+Filter size: 3 x 3
+Filter type: sobel_y
+
+Launch configuration: 16x16 blocks, 16x16 threads per block
+Execution time: 0.000059 seconds (0.059 ms)
+Result pixel [0][0]: 1
+GPU: NVIDIA GeForce RTX 3060
+Image size: 256 x 256
+Filter size: 3 x 3
+Filter type: gaussian
+
+Launch configuration: 16x16 blocks, 16x16 threads per block
+Execution time: 0.000187 seconds (0.187 ms)
+Result pixel [0][0]: 0
+GPU: NVIDIA GeForce RTX 3060
+Image size: 256 x 256
+Filter size: 3 x 3
+Filter type: sharpen
+
+Launch configuration: 16x16 blocks, 16x16 threads per block
+Execution time: 0.000081 seconds (0.081 ms)
+Result pixel [0][0]: 0
+GPU: NVIDIA GeForce RTX 3060
+Image size: 256 x 256
+Filter size: 3 x 3
+Filter type: laplacian
+
+Launch configuration: 16x16 blocks, 16x16 threads per block
+Execution time: 0.000057 seconds (0.057 ms)
+Result pixel [0][0]: 0
+GPU: NVIDIA GeForce RTX 3060
+Image size: 512 x 512
+Filter size: 3 x 3
+Filter type: sobel_x
+
+Launch configuration: 32x32 blocks, 16x16 threads per block
+Execution time: 0.000069 seconds (0.069 ms)
+Result pixel [0][0]: 3
+GPU: NVIDIA GeForce RTX 3060
+Image size: 512 x 512
+Filter size: 3 x 3
+Filter type: sobel_y
+
+Launch configuration: 32x32 blocks, 16x16 threads per block
+Execution time: 0.000067 seconds (0.067 ms)
+Result pixel [0][0]: 1
+GPU: NVIDIA GeForce RTX 3060
+Image size: 512 x 512
+Filter size: 3 x 3
+Filter type: gaussian
+
+Launch configuration: 32x32 blocks, 16x16 threads per block
+Execution time: 0.000086 seconds (0.086 ms)
+Result pixel [0][0]: 0
+GPU: NVIDIA GeForce RTX 3060
+Image size: 512 x 512
+Filter size: 3 x 3
+Filter type: sharpen
+
+Launch configuration: 32x32 blocks, 16x16 threads per block
+Execution time: 0.000067 seconds (0.067 ms)
+Result pixel [0][0]: 0
+GPU: NVIDIA GeForce RTX 3060
+Image size: 512 x 512
+Filter size: 3 x 3
+Filter type: laplacian
+
+Launch configuration: 32x32 blocks, 16x16 threads per block
+Execution time: 0.000091 seconds (0.091 ms)
+Result pixel [0][0]: 0
+GPU: NVIDIA GeForce RTX 3060
+Image size: 1024 x 1024
+Filter size: 3 x 3
+Filter type: sobel_x
+
+Launch configuration: 64x64 blocks, 16x16 threads per block
+Execution time: 0.000103 seconds (0.103 ms)
+Result pixel [0][0]: 3
+GPU: NVIDIA GeForce RTX 3060
+Image size: 1024 x 1024
+Filter size: 3 x 3
+Filter type: sobel_y
+
+Launch configuration: 64x64 blocks, 16x16 threads per block
+Execution time: 0.000102 seconds (0.102 ms)
+Result pixel [0][0]: 1
+GPU: NVIDIA GeForce RTX 3060
+Image size: 1024 x 1024
+Filter size: 3 x 3
+Filter type: gaussian
+
+Launch configuration: 64x64 blocks, 16x16 threads per block
+Execution time: 0.000126 seconds (0.126 ms)
+Result pixel [0][0]: 0
+GPU: NVIDIA GeForce RTX 3060
+Image size: 1024 x 1024
+Filter size: 3 x 3
+Filter type: sharpen
+
+Launch configuration: 64x64 blocks, 16x16 threads per block
+Execution time: 0.000126 seconds (0.126 ms)
+Result pixel [0][0]: 0
+GPU: NVIDIA GeForce RTX 3060
+Image size: 1024 x 1024
+Filter size: 3 x 3
+Filter type: laplacian
+
+Launch configuration: 64x64 blocks, 16x16 threads per block
+Execution time: 0.000099 seconds (0.099 ms)
+Result pixel [0][0]: 0
+=== CONVOLUTION ===
+
+--- CPU Convolution ---
+
+--- GPU Convolution ---
+
+Convolution tests done.
+Python call to CUDA library completed in 0.0917 seconds
+Convolution completed in 0.086134 seconds
+  Image size: 512x512
+  Filter size: 3x3
+  Filter type: sobel_x
+  Result pixel [0][0]: 4
+============================================================
+
+============================================================
+
+============================================================
+=== PYTHON + CUDA LIBRARY ===
+
+--- Matrix multiply via lib ---
+
+--- Convolution via lib (example) ---
+
+============================================================
+All runs finished.

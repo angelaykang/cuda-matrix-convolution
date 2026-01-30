@@ -1,0 +1,36 @@
+# Build outputs
+*.exe
+*.obj
+*.o
+*.dll
+*.so
+*.dylib
+*.exp
+*.lib
+*.pdb
+*.ilk
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+venv/
+.venv/
+env/
+
+# IDE / editor
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Optional: uncomment to ignore generated PGM images
+# samples/*.pgm
